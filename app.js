@@ -4,7 +4,8 @@ const sum = (a,b) => {
 
 const fromEuroToDollar = (euro) => {
     // 1 euro = 1.07 dollars
-    return euro * 1.07;
+    let dollars = euro * 1.07;
+    return dollars;
 }
 
 const fromDollarToYen = (dollar) => {
@@ -12,7 +13,8 @@ const fromDollarToYen = (dollar) => {
     let dollarInEuro = dollar / 1.07;
 
     // 1 euro = 156.5 yen
-    return dollarInEuro  * 156.5;
+    let yens = dollarInEuro  * 156.5;
+    return yens;
 }
 
 const fromYenToPound = (yen) => {
@@ -20,7 +22,8 @@ const fromYenToPound = (yen) => {
     let yenInEuro = yen / 156.5;
 
     // 1 euro = 0.87 pounds
-    return yenInEuro * 0.87
+    let pounds = yenInEuro * 0.87;
+    return pounds;
 }
 
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
